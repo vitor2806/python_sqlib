@@ -58,9 +58,5 @@ def delete(table, where):
     c.execute(query)
     con.commit()
 
-result = (select("*", "alunos"))
-for line in result:
-    print(line)
-delete("alunos", "id_aluno >= 11 and nome = 'Maria de Fátima'")
 
 # print(select("*", 'alunos', 'id_aluno = 8'))
